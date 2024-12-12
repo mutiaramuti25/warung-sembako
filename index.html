@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Sembako Pak Ruslan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">WarungSembako  <span>PakRuslan.</span></a>
+
+        <div class="navbar-nav">
+            <button style="border-radius: 15px;"><a href="#home">Home</a></button>
+            <button style="border-radius: 15px;"><a href="#about">About</a></button>
+            <button style="border-radius: 15px;"><a href="#products">Produk</a></button>
+          </div>
+    </nav>
+
+    <!-- hero start -->
+    <section class="hero" id="home">
+        <main class="content">
+          <h1>Warung Sembako<span>Pak Ruslan</span></h1>
+          <p>Kebutuhan Harian Lengkap, Harga Bersahabat!</p>
+        </main>
+    </section>
+    <!-- hero end -->
+
+    <!-- about start -->
+     <section class="tentangkami" id="about">
+      <h1>Tentang   <span>Kami</span></h1><br><br>
+      <h2>Selamat datang di Warung Sembako Pa Ruslan!</h2><br>
+      <h4>Kami adalah warung sembako yang melayani kebutuhan sehari-hari masyarakat dengan produk-produk berkualitas dan harga yang terjangkau.Warung Sembako Pa Ruslan berkomitmen untuk menjadi mitra terbaik bagi keluarga Anda dalam memenuhi kebutuhan pokok seperti beras, minyak goreng, gula, tepung, telur, hingga berbagai bahan dapur lainnya.</h4><br>
+      <div class="content1">
+      <div class="content2">
+      <h2>Alamat Kami</h2><br>
+      <h4>Jl. Ciomas Cluster Permata Zam-Zam No.10 RT 01 RW 05, Kec.Ciomas, Kabupaten Bogor, Jawa Barat</h4>
+      </div>
+      <div class="content1">
+      <div class="content2">
+      <h2>Kenapa Memilih Kami?</h2><br>
+      <h4>1. Produk Berkualitas Semua produk kami dipilih dengan hati-hati untuk memastikan kualitas terbaik bagi pelanggan.<br>
+      2. Harga Terjangkau Kami memahami kebutuhan ekonomi masyarakat dan selalu berusaha memberikan harga yang bersaing.<br>
+      3. Pelayanan Ramah Kepuasan pelanggan adalah prioritas utama kami. Kami siap melayani dengan sepenuh hati.</h4><br>
+      </div>
+      <div class="content1">
+      <div class="content2">
+      <h2>Misi Kami</h2><br>
+      <h4>Menyediakan kebutuhan pokok yang lengkap,terjangkau dan berkualitas, serta mendukung kehidupan masyarakat sekitar dengan pelayanan yang memuaskan.
+      Kunjungi Warung Sembako Pa Ruslan untuk pengalaman belanja yang mudah dan menyenangkan!</h4>
+      </div>
+     </section>
+     <!-- about end -->
+
+    <!-- product start -->
+    <section class="products" id="products"><br><br><br><br><br><br>
+      <h1>Produk   <span>Kami</span></h1>
+      <h3>Kami Menyediakan Berbagai Produk Sembako Untuk Kebutuhan Sehari-hari Anda disini:</h3><br><br><br><br>
+    </section>
+
+    <div class="container"> 
+    <div class="product"> 
+      <img src="img/minyak.jpg" alt="minyak"><br><br>
+      <h4>Rose Brand - Minyak Goreng Rose Brand 2 Liter</h4>
+      <h3>Harga: Rp 42.000</h3><br>
+      <button onclick="addToCart('minyak goreng rosebrand 2L', 42000)">Beli</button> 
+    </div> 
+
+    <div class="product"> 
+    <img src="img/gula.jpg" alt="gula"><br><br>
+      <h4>Gulaku Gula Pasir tebu kuning 1 kg</h4>
+      <h3>Harga: Rp 18.000</h3><br>
+      <button onclick="addToCart('gula pasir tebu kuning 1kg', 18000)">Beli</button> 
+    </div> 
+
+    <div class="product"> 
+      <img src="img/beras.jpg" alt="beras"><br><br> 
+      <h4>Beras Slyp Super Cap Kembang 5kg</h4>
+      <h3>Harga: Rp 67.000</h3><br>
+      <button onclick="addToCart('beras slyp super cap kembang 5kg', 67000)">Beli</button> 
+    </div> 
+
+    <div class="product"> 
+      <img src="img/telur.jpg" alt="telur"><br><br> 
+      <h4>Telur Ayam Negri</h4><br><br>
+      <h3>Harga: Rp 22.000</h3><br>
+      <button onclick="addToCart('telur ayam negri', 22000, )">Beli</button> 
+    </div>
+
+    <div class="product"> 
+      <img src="img/nugget.jpg" alt="nugget"><br><br>
+      <h4>Champ Nugget Ayam isi 250 gram</h4><br>
+      <h3>Harga: Rp 23.000</h3><br>
+      <button onclick="addToCart('champ nugget ayam 250g', 23000,)">Beli</button> 
+    </div> 
+
+    <div class="product"> 
+      <img src="img/sabun mandi.jpg" alt="sabun mandi"><br><br>  
+      <h4>Giv Glowing White Sabun Mandi Cair 450ml</h4>
+      <h3>Harga: Rp 18.000</h3><br>
+      <button onclick="addToCart('giv glowingwhite sabun cair 450ml', 18000)">Beli</button> 
+    </div>
+    
+    <div class="product"> 
+      <img src="img/detergen.jpg" alt="detergen"><br><br>
+      <h4>Daia Detergen 320g</h4><br>
+      <h3>Harga: Rp 5.000</h3><br>
+      <button onclick="addToCart('daia detergen 320g', 5000)">Beli</button> 
+    </div>
+
+    <div class="product"> 
+      <img src="img/galon le mineral.jpg" alt="air mineral"><br><br>
+      <h4>Galon Le mineral 5L</h4><br>
+      <h3>Harga: Rp 16.000</h3><br>
+      <button onclick="addToCart('Galon Le  mineral 5L', 16000)">Beli</button> 
+    </div>
+
+    <div class="product"> 
+      <img src="img/gas elpiji.jpg" alt="gas elpiji"><br><br>
+      <h4>Tabung Gas 3kg</h4><br>
+      <h3>Harga: Rp 24.000</h3><br>
+      <button onclick="addToCart('tabung gas elpiji 3kg', 24000)">Beli</button> 
+    </div>
+    </div> 
+         
+    <div id="cartModal" class="modal"> 
+        <div class="modal-content"> 
+            <span class="close" onclick="closeCart()">&times;</span> 
+            <h2>Keranjang   <span>Belanja</span></h2> 
+            <table id="cartTable"> 
+                <thead> 
+                    <tr> 
+                        <th>Nama Barang</th> 
+                        <th>Harga</th>
+                        <th>Total Barang</th> 
+                        <th>Jumlah Harga</th>
+                    </tr> 
+                </thead> 
+                <tbody id="cartBody"> 
+                </tbody> 
+            </table>
+            <button id="pesansekarang">Pesan Sekarang</button>
+        </div> 
+            </div>
+    <!-- product end -->
+  
+      <!-- footer start -->
+       <footer>
+        <div class="links">
+          <button style="border-radius: 10px;"><a href="#home">Home</a></button>
+          <button style="border-radius: 10px;"><a href="#about">About</a></button>
+          <button style="border-radius: 10px;"><a href="#products">Produk</a></button>
+        </div>
+  
+        <div class="credit">
+          <p>Created by <a>Kelompok 7</a>. &copy; 2024.</p>
+        </div>
+       </footer>
+       <!-- footer end -->
+       <script src="script.js"></script>
+</body>
+</html>

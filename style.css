@@ -1,0 +1,463 @@
+:root {
+    --body: #fff;
+    --navbar: #133E87;
+    --font: #608BC1;
+    --hover: #CBDCEB;
+}
+
+* {
+    font-family: 'poppins' , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'poppins' , sans-serif, 'Times New Roman', Times, serif;
+    height: 450vh;
+    background-color: var(--body);
+}
+
+h2, p, h3 {
+    text-align: center;
+}
+
+span {
+    color: var(--navbar);
+}
+
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;
+    background-color: var(--navbar);
+    border-bottom: 5px solid var(--font);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+/* 2rem artinya 2 kali 16px */
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--font);
+    font-style: italic;
+}
+
+.navbar .navbar-logo span {
+    color: var(--body);
+    text-shadow: 5px 5px 5px  rgba(252, 254, 252, 0.995);
+}
+
+.navbar .navbar-nav button {
+    background-color: #fff;
+}
+
+.navbar .navbar-nav a {
+    color: var(--navbar);
+    display: inline-block;
+    font-size: 17px;
+    margin: 10px;
+    font-weight: 550;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--font);
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: block;
+    border-bottom: 2px solid var(--font);
+    transform: scaleX(0); /* biar bordernya ilang */
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(1);
+    transition: 0.2s linear;
+}
+
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(img/sembako2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after {
+    content: ''; /* biar bisa dikasih style */
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    /*background: linear-gradient(0deg, rgb(95, 173, 112) 15%, var(--body) 5%); biar warnanya gradasi & engga keliatan patah warna nya */
+}
+
+.hero .content {
+    padding: 1.4rem 7%;
+    /* max-width: 60rem; */
+    width: 100%;
+    text-align: center;
+    top: 150px;
+}
+
+.hero .content h1 {
+    font-size: 5em;
+    color: var(--font);
+    line-height: 1;
+}
+
+.hero .content span {
+    color: var(--body);
+}
+
+.hero .content p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight: 100;
+    text-shadow: 5px 5px 5px  rgba(19, 15, 42, 0.995);
+    color: var(--body);
+}
+
+.hero .content .cta {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem ; /* atas bawah 1rem kiri kanan nya 3rem */
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: var(--primary);
+    border-radius: 0.5rem; /* atau 8px */
+    box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+
+.content1 {
+    gap: 5px 5px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    max-width: 1050px; /* Maksimum lebar kontainer 800px */ 
+    margin: 0 auto; /* Mengatur margin otomatis untuk pusat kontainer */ 
+    background-color: #eeece7;
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin: auto;
+}
+
+.content2 {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 1050px; 
+}
+
+.tentangkami {
+    min-height: 100vh;
+    align-items: center;
+    text-align: center;
+    padding: 100px 100px;
+}
+
+.tentangkami h1 {
+    font-size: 30px;
+    color: var(--font);
+    padding: 1px 1px;
+}
+
+.tentangkami span {
+    color: var(--navbar);
+    text-shadow: 5px 5px 5px  rgba(153, 156, 139, 0.995);
+}
+
+.tentangkami a {
+    font-weight: 800;
+}
+
+.tentangkami h2 {
+    color: var(--font);
+    padding: 1px 100px;
+}
+
+.tentangkami h4 {
+    padding: 5px 15px;
+    color: var(--navbar);
+}
+
+.content1 h4 {
+    padding: 2px 5px;
+}
+
+.content1 h3 {
+    color: var(--font);
+    padding: 10px 1px;
+}
+
+
+
+.container {
+    gap: 10px 15px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    max-width: 800px; /* Maksimum lebar kontainer 800px */ 
+    margin: 0 auto; /* Mengatur margin otomatis untuk pusat kontainer */ 
+    background-color: #FAF9F6;
+    border-radius: 15px;
+    padding: 10px 10px;
+    margin: auto;
+} 
+ 
+.product {
+    background: white;
+    padding: 30px 30px;
+    border-radius: 15px;
+    box-shadow: 0 60px 80px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px; 
+}
+
+.products h1 {
+    font-size: 30px;
+    color: var(--font);
+    text-align: center;
+    padding: 3px 5px;  
+}
+
+.products span {
+    color: var(--navbar);
+    text-shadow: 5px 5px 5px  rgba(153, 156, 139, 0.995); 
+}
+
+.products h3 {
+    color: var(--font);
+    padding: 12px 2px;
+}
+
+.product img {
+    width: 100px; 
+    height: 100px; 
+}
+
+.product h2 {
+    color: var(--font);
+}
+
+.product h4 {
+    color: var(--navbar);
+    padding: 8px;
+}
+
+.product h3 {
+    color: var(--font);
+    padding: 10px;
+}
+
+.product button {
+    border-radius: 5px;
+    background-color: var(--navbar);
+    padding: 5px 10px;
+    color: #fff;
+    position: relative;
+    align-items: center;
+}
+
+.product button:hover {
+    background-color: var(--font);
+}
+
+.product .decrease {
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.product .quantitydisplay {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product .increase {
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    position: relative;
+    z-index: 1001;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    font-size: 30px;
+    color: var(--font);
+}
+
+.modal-content span {
+    color: var(--navbar);
+}
+
+.modal-content th {
+    padding: 10px 15px;
+    color: var(--font);
+}
+
+.modal-content .pesan {
+    padding: 1px 100px;
+}
+
+.modal-content button {
+    color: #fff;
+    background-color: var(--font);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 10px 15px;
+}
+
+.modal-content button:hover {
+    background-color: var(--hover);
+}
+
+
+
+footer {
+    border: 3px solid var(--font);
+    background-color: var(--navbar);
+    text-align: center;
+    align-items: center;
+    padding: 1rem 0 3rem;
+    margin-top: 3rem;
+}
+
+footer .links {
+    margin-bottom: 1.4rem;
+}
+
+footer .links a {
+    color: var(--navbar);
+    font-weight: 550;
+}
+
+footer .links a:hover {
+    color: var(--font);
+}
+
+footer .links a::after {
+    content: '';
+    display: block;
+    padding-bottom: block;
+    border-bottom: 2px solid var(--font);
+    transform: scaleX(0); /* biar bordernya ilang */
+}
+
+footer .links a:hover::after {
+    transform: scaleX(1);
+    transition: 0.2s linear;
+}
+
+footer .links button {
+    border: 3px solid var(--font);
+    background-color: var(--body);
+    padding: 7px 8px;
+}
+
+footer .credit {
+    font-size: 0.8rem;
+}
+
+footer .credit, p {
+    font-size: 0.8rem;
+    color: var(--body);
+}
+
+footer .credit a {
+    color: var(--body);
+    font-weight: 700;
+}
+
+
+
+/* Media query untuk layar kecil */ 
+@media (max-width: 768px) { 
+.product { 
+flex: 1 1 100%; /* 1 kolom pada layar kecil */ 
+} 
+} 
+
+.modal { 
+display: none; 
+position: fixed; 
+z-index: 1; 
+left: 0; 
+top: 0; 
+width: 100%; 
+height: 100%; 
+overflow: auto; 
+background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content { 
+background-color: #fefefe; 
+margin: 15% auto; 
+padding: 20px; 
+border: 1px solid #888; 
+width: 80%; 
+} 
+
+.close { 
+color: #aaa; 
+float: right; 
+font-size: 28px; 
+font-weight: bold; 
+}
